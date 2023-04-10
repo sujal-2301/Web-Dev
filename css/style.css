@@ -1,0 +1,21 @@
+h1{
+    color: purple;
+    background-color: plum;
+    text-align: center;
+    width: 50%;
+    font-family: fantasy;
+}
+button{
+    color: rgb(250, 92, 104);
+    background-color: cyan;
+    text-decoration: line-through;
+}
+body{
+
+}
+p{
+    color: green;
+    font-weight: 700;
+    font-size: 35px;
+    font-family: cursive;
+}

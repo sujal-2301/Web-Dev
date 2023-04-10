@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+  </head>
+
+  <body>
+    <h1>Forms</h1>
+    <form action="/search">
+      <button type="button">Doesnt work</button>
+      <!-- this is of type button so it wont behave as submit button which is default -->
+      <p>
+        <label for="username">Enter your username :</label>
+        <!-- if you click this text it will go to the input with the id that we put in for -->
+        <input
+          id="username"
+          type="text"
+          placeholder="Username"
+          name="username"
+        />
+        <!-- this will name the query as username which will be sent to server , can see at the url section after clicking-->
+      </p>
+      <p>
+        <label for="password">Enter your password</label>
+        <input
+          id="password"
+          type="Enter password"
+          placeholder="Password"
+          name="password"
+        />
+      </p>
+      <p>
+        <label for="color">Choose your colour :</label>
+        <input type="color" id="color" />
+      </p>
+      <p>
+        <label for="number">Enter your number :</label>
+        <input type="number" id="number" placeholder="Number" />
+      </p>
+      <button>Submit</button>
+      <!-- this button will go to /search by deafult as we defined action of the form as /search -->
+      <hr />
+    </form>
+    <h2>Search Google</h2>
+
+    <form action="https://www.google.com/search?">
+      <input type="text" id="search" name="q" />
+      <button>Search Google</button>
+    </form>
+
+    <h2>Search YouTube</h2>
+    <form action="https://www.youtube.com/results?">
+      <input type="text" id="youtube" name="search_query" />
+      <button>Search YouTube</button>
+    </form>
+    <hr />
+    <h2>More Inputs</h2>
+    <form action="/first_program.html">
+      <label for="agree">I agree to nothing</label>
+      <input type="checkbox" name="agree" id="agree" />
+      <button>Submit</button>
+      <p>
+        <h2>Choose language</h2>
+        <label for="english">English</label>
+        <input type="radio" id="english" name="language" value="eng"/>
+
+        <label for="french">French</label>
+        <input type="radio" id="french" name="language" value="fre"/>
+
+        <label for="spanish">Spanish</label>
+        <input type="radio" id="spanish" name="language" value="spa"/>
+        <button>Submit</button>
+        <!-- value parameter is passed when button is pressed to identify which of the radio button was selected -->
+      </p>
+      <p>
+        <label for="city">Choose your city</label>
+        <select name="city" id="city">
+          <option value="mum">Mumbai</option>
+        <option value="pun">Pune</option>
+        <option value="beng">Bengaluru</option>
+        </select>
+      </p>
+      <p>
+        <label for="cheese">Select amount of cheese</label>
+        <input type="range" id="cheese" name="cheese_level" min="1" max="10">
+        <button>Submit</button>
+
+      </p>
+      <p>
+        <label for="feedback">Please give us your valuable feedback!</label>
+        <textarea name="feedback" id="feedback" cols="30" rows="4"></textarea>
+        <!-- the row number is just default value it can go past it -->
+        <!-- not valid for column though -->
+      </p>
+    </form>
+  </body>
+</html>

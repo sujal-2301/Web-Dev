@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables in HTML</title>
+  </head>
+
+  <body>
+    <h1>Heaviest Birds</h1>
+    <table>
+      <thead>
+        <!-- thead is semantic , it only makes the code more readable nothing changes -->
+
+        <tr>
+          <th>Animal</th>
+          <th>Maximum Mass</th>
+          <th>Flighted</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- tbody is semantic , it only makes the code more readable nothing changes -->
+        <tr>
+          <td>Ostrich</td>
+          <td>104 Kg</td>
+          <td>No</td>
+        </tr>
+
+        <tr>
+          <td>Somali Ostrich</td>
+          <td>90 Kg</td>
+          <td>No</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>V2</h2>
+    <table>
+      <thead>
+        <!-- thead is semantic , it only makes the code more readable nothing changes -->
+
+        <tr>
+          <th rowspan="2">Animal</th>
+          <!-- rowspan = 2 means takes two rows worth of space -->
+          <th colspan="2">Maximum Mass</th>
+          <!-- colspan = 2 means takes two columns worth of space -->
+
+          <th rowspan="2">Flighted</th>
+        </tr>
+
+        <tr>
+          <th>KG</th>
+          <th>Lbs</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- tbody is semantic , it only makes the code more readable nothing changes -->
+        <tr>
+          <td>Ostrich</td>
+          <td>104</td>
+          <td>230</td>
+          <td>No</td>
+        </tr>
+
+        <tr>
+          <td>Somali Ostrich</td>
+          <td>90</td>
+          <td>200</td>
+          <td>No</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
