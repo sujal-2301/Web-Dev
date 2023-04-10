@@ -19,3 +19,28 @@ p{
     font-size: 35px;
     font-family: cursive;
 }
+
+/* adding style to a particular element 
+
+by using ID */
+#firstbutton{
+    font-size: 25px;
+    color: darkblue;
+}
+
+/* by using class */
+.button{
+    font-size: 25px;
+    background-color: aquamarine;
+}
+
+/* by using definitie list location */
+/* 
+.button li {
+    color: blue;
+} */
+
+ p + ul{
+    /* color: royalblue; */
+    font-size: 50px;
+}
