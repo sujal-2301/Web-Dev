@@ -41,6 +41,32 @@ by using ID */
 } */
 
  p + ul{
+    /* ul just after p is selected */
     /* color: royalblue; */
     font-size: 50px;
+}
+
+ul > li{
+    /* li under ul , direct child  */
+    color: green;
+}
+
+input[type="text"]{
+    /* select the input which has type = text , valid for other properties too */
+    color: blue;
+}
+
+button:hover{
+    background-color: magenta;
+    color: aliceblue;
+}
+
+h1::first-letter{
+    color: greenyellow;
+    font-size: 50px;
+}
+
+p::selection{
+    /* it will turn the bg to aqua color when u select the text by dragging mouse across */
+    background-color: aqua;
 }
