@@ -113,3 +113,20 @@ a:hover {
 a:active {
   background-color: aquamarine;
 }
+
+/* resolving conflicts */
+
+#copyright {
+  color: black;
+}
+.copyright {
+  color: yellow;
+}
+
+.text {
+  color: green;
+}
+
+footer {
+  color: red;
+}
