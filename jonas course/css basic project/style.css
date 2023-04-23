@@ -1,32 +1,95 @@
-h1 {
+/* instead of giving the same font to each element we can just select all of them and style them at once */
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
   font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
   text-transform: uppercase;
   font-style: italic;
 }
 
 h2 {
   font-size: 40px;
-  font-family: sans-serif;
 }
 
 p {
   font-size: 22px;
-  font-family: sans-serif;
+
   line-height: 1.5;
 }
 
 h3 {
   font-size: 30px;
-  font-family: sans-serif;
 }
 
 h4 {
   fontsize: 20px;
-  font-family: sans-serif;
+
   text-transform: uppercase;
 }
 
 li {
   font-size: 20px;
-  font-family: sans-serif;
+}
+
+/* footer p {
+  font-size: 16px;
+} */
+
+/* header p {
+  font-style: italic;
+} */
+
+/* slecting by id */
+/* id can only be used once , to use same id for multiple elements we use class  */
+#author {
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+/* selecting by class */
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+  /* remove bullet points */
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border: 5px solid #1098ad;
+  /* border-top: 5px solid #1098ad; */
+  /* border-bottom: 5px solid #1098ad; */
+}
+
+/* pseudo class */
+li:first-child {
+  font-weight: bold;
+}
+li:nth-child(2) {
+  font-style: italic;
 }

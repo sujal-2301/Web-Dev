@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>&#128216; The Code Magazine</h1>
       <nav>
         <a href="slfj">Blog</a>
@@ -27,14 +27,17 @@
           height="60"
           width="60"
         />
-        <p>Posted by<strong> Laura Jones </strong>on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by<strong> Laura Jones </strong>on Monday, June 21st 2027
+        </p>
+        <img
+          src="cherry blossoms.jpeg"
+          alt="Main picture of the article"
+          width="500"
+          height="200"
+        />
       </header>
-      <img
-        src="cherry blossoms.jpeg"
-        alt="Main picture of the article"
-        width="500"
-        height="200"
-      />
+
       <p>All modern websites are made by using HTML</p>
       <h3>What is HTML</h3>
       <p>HTML stands for Hyper Text Markup Language</p>
@@ -50,8 +53,9 @@
         <li>To be able to use fundamental web dev language</li>
         <li>To have fun</li>
       </ul>
+      <aside>
       <h4>Related Posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="cherry blossoms.jpeg"
@@ -61,7 +65,7 @@
           />
           <a href="sljfdl">How to learn Web Development</a>
         </li>
-        <p>By Sujal Kumar Sinha</p>
+        <p class="related-author">By Sujal Kumar Sinha</p>
         <li>
           <img
             src="cherry blossoms.jpeg"
@@ -70,10 +74,13 @@
             height="80"
           />
           <a href="sljds"> The unknown powers of CSS </a>
-          <p>By Sujal Kumar</p>
+          <p class="related-author">By Sujal Kumar</p>
         </li>
       </ul>
     </article>
-    <footer>Copyright &#169; 2027 by The Code Magazine.</footer>
+  </aside>
+    <footer>
+      <p id="copyright">Copyright &#169; 2027 by The Code Magazine.</p>
+    </footer>
   </body>
 </html>
