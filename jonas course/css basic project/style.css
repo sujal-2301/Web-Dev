@@ -93,3 +93,23 @@ li:first-child {
 li:nth-child(2) {
   font-style: italic;
 }
+
+/* styling links*/
+/* orer is like LVHA */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline wavy #444;
+}
+a:active {
+  background-color: aquamarine;
+}
