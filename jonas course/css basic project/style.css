@@ -130,3 +130,16 @@ a:active {
 footer {
   color: red;
 }
+/* 
+Inheritance is present in css but its preference order is very low so it gets overwritten very easily when a other selector styles that element */
+
+body {
+  color: red;
+}
+/* all the properties of body gets inherited to the child elments of the body , properties like border top doesnt get passed down to the child */
+
+/* the universal selector , it has lowest priority */
+
+* {
+  font-size: 22px;
+}
