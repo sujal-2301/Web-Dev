@@ -21,6 +21,7 @@ li {
   margin-right: auto; */
   margin: 0 auto;
   border: 5px solid black;
+  position: relative;
 }
 
 .main-header {
@@ -175,6 +176,7 @@ Inheritance is present in css but its preference order is very low so it gets ov
 
 body {
   color: red;
+  /* position: relative; */
 }
 /* all the properties of body gets inherited to the child elments of the body , properties like border top doesnt get passed down to the child */
 
@@ -189,7 +191,7 @@ body {
   height: auto;
 }
 
-button {
+.cart {
   background-color: black;
   color: #f7f7f7;
   text-transform: uppercase;
@@ -214,4 +216,13 @@ nav a:link {
 
   /* to convert this into block level element */
   /* display: block; */
+}
+
+.absolute-button {
+  font-size: 22px;
+  cursor: pointer;
+  padding: 20px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }
