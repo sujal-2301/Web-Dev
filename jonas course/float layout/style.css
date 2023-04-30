@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* instead of giving the same font to each element we can just select all of them and style them at once */
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+.container {
+  width: 1200px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  /* border: 5px solid black; */
+  position: relative;
+  margin-top: 40px;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /* border-top: 5px solid #1098ad; */
+  /* border-bottom: 5px solid #1098ad; */
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  /* padding: 50px 50px; */
+  width: 500px;
+  padding-left: 0;
+  padding-top: 30px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+p {
+  font-size: 22px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* footer p {
+  font-size: 16px;
+} */
+
+/* header p {
+  font-style: italic;
+} */
+
+/* slecting by id */
+/* id can only be used once , to use same id for multiple elements we use class  */
+#author {
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+/* selecting by class */
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+  /* remove bullet points */
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+/* pseudo class */
+li:first-child {
+  font-weight: bold;
+}
+li:nth-child(2) {
+  font-style: italic;
+}
+
+/* styling links*/
+/* orer is like LVHA */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline wavy #444;
+}
+a:active {
+  background-color: aquamarine;
+}
+
+/* resolving conflicts */
+
+#copyright {
+  color: black;
+}
+.copyright {
+  color: yellow;
+}
+
+.text {
+  color: green;
+}
+
+footer {
+  color: red;
+}
+/* 
+Inheritance is present in css but its preference order is very low so it gets overwritten very easily when a other selector styles that element */
+
+body {
+  color: red;
+  /* position: relative; */
+}
+/* all the properties of body gets inherited to the child elments of the body , properties like border top doesnt get passed down to the child */
+
+/* the universal selector , it has lowest priority */
+
+* {
+  font-size: 22px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
+
+.cart {
+  background-color: black;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+button:hover {
+  background-color: #f7f7f7;
+  color: black;
+  border-top: 5px solid black;
+  /* border-bottom: 5px solid black;
+  border-left: 5px solid black;
+  border-right: 5px solid black; */
+}
+
+/* margin does not work at top and bottom because it is a inline element not block  */
+nav a:link {
+  /* background-color: orangered; */
+  margin: 20px;
+
+  /* to convert this into block level element */
+  /* display: block; */
+}
+
+.absolute-button {
+  font-size: 22px;
+  cursor: pointer;
+  padding: 20px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+/* pseudo element  , use two colon . One colon is for pseudo classes */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+  /* font-size: 30px; */
+}
+
+h2::after {
+  content: "Top";
+  background-color: yellow;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 16px;
+  position: absolute;
+  top: -16px;
+  right: 5px;
+}
+
+.color1,
+.color2,
+.color3,
+.color4 {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.colors div:last-child {
+  margin-right: 0;
+}
+.colors div:nth-child(1) {
+  background-color: green;
+}
+
+.color2 {
+  background-color: pink;
+}
+
+.color3 {
+  background-color: blue;
+}
+
+.container::after {
+  content: "SALE";
+  background-color: red;
+  color: white;
+  position: absolute;
+  left: -40px;
+  top: -20px;
+  letter-spacing: 5px;
+}
+
+/* FLOAT LAYOUT */
+
+.author-image {
+  float: left;
+  margin-bottom: 20px;
+}
+.author {
+  /* padding-left: 80px; */
+  margin-top: 10px;
+  float: left;
+  margin-left: 20px;
+}
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+/* .clear {
+  clear: both;
+} */
+
+article {
+  /* background-color: green; */
+  width: 850px;
+  float: left;
+}
+aside {
+  /* background-color: red; */
+  width: 300px;
+  float: right;
+  padding: 50px 40px;
+}
+/* aside > * {
+  margin-left: 0;
+} */
+footer {
+  /* background-color: yellow; */
+}
+
+/* NEW BOX MODEL  , works like flutter padding with this property*/
+aside {
+  /* box-sizing: border-box;
+  add this to universal selector instead */
+}
