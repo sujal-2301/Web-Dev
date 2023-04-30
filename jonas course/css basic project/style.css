@@ -22,6 +22,7 @@ li {
   margin: 0 auto;
   border: 5px solid black;
   position: relative;
+  margin-top: 40px;
 }
 
 .main-header {
@@ -212,7 +213,7 @@ button:hover {
 
 /* margin does not work at top and bottom because it is a inline element not block  */
 nav a:link {
-  background-color: orangered;
+  /* background-color: orangered; */
   margin: 20px;
 
   /* to convert this into block level element */
@@ -244,4 +245,39 @@ h2::after {
   position: absolute;
   top: -16px;
   right: 5px;
+}
+
+.color1,
+.color2,
+.color3,
+.color4 {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.colors div:last-child {
+  margin-right: 0;
+}
+.colors div:nth-child(1) {
+  background-color: green;
+}
+
+.color2 {
+  background-color: pink;
+}
+
+.color3 {
+  background-color: blue;
+}
+
+.container::after {
+  content: "SALE";
+  background-color: red;
+  color: white;
+  position: absolute;
+  left: -40px;
+  top: -20px;
+  letter-spacing: 5px;
 }
